@@ -1,0 +1,506 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "System Admin",
+      "email": "admin@bus.com",
+      "phone": "123-456-7890",
+      "password_hash": "$2b$10$7jSrr96yU3BCTXYQ/6RSGu.juAsDy9dt4KK5EtfbxLFinq7.EZ.Fe",
+      "role": "admin",
+      "created_at": "2026-06-24T16:01:25.800Z"
+    },
+    {
+      "id": "usr_operator",
+      "name": "Bus Conductor / Operator",
+      "email": "operator@bus.com",
+      "phone": "234-567-8901",
+      "password_hash": "$2b$10$7jSrr96yU3BCTXYQ/6RSGuI.4ux7KAIfd2NWr5CGP6gi6svRZncU.",
+      "role": "operator",
+      "created_at": "2026-06-24T16:01:25.801Z"
+    },
+    {
+      "id": "usr_customer",
+      "name": "Ramesh Kumar",
+      "email": "customer@bus.com",
+      "phone": "9876543210",
+      "password_hash": "$2b$10$7jSrr96yU3BCTXYQ/6RSGu/GUiO4K0NatpiIkIhGvo69DjeyC5bZq",
+      "role": "customer",
+      "created_at": "2026-06-24T16:01:25.801Z"
+    },
+    {
+      "id": "usr_1782320347703",
+      "name": "John Test",
+      "email": "user_1782320347528@test.com",
+      "phone": "9990003277",
+      "password_hash": "$2b$10$wlpRhMdUamCHPCvgP/wCkO7I.dswZEFuwMTF180NdTx3zY7jgeRw.",
+      "role": "customer",
+      "created_at": "2026-06-24T16:59:07.703Z"
+    },
+    {
+      "id": "usr_1782320370216",
+      "name": "John Test",
+      "email": "user_1782320370098@test.com",
+      "phone": "9990007870",
+      "password_hash": "$2b$10$0Z8YNkRja/z6P4yLdfT67e/oSUMofiP.TxQ3lQ/Xtq9nVs1WqyoHG",
+      "role": "customer",
+      "created_at": "2026-06-24T16:59:30.216Z"
+    },
+    {
+      "id": "usr_1782323890974",
+      "name": "Manoj",
+      "email": "kandulamanoj2005@gmail.com",
+      "phone": "6309655940",
+      "password_hash": "$2b$10$.nYd6pQrVpiQbEzgcb2vZ.5gEg71DvrWSXAsX6g9gxtwxX0uoJXKW",
+      "role": "customer",
+      "created_at": "2026-06-24T17:58:10.974Z"
+    },
+    {
+      "id": "usr_1782324540718",
+      "name": "John Test",
+      "email": "user_1782324540589@test.com",
+      "phone": "9990003904",
+      "password_hash": "$2b$10$gUWyYik0MAa4M2vgbNEVx.r.9eZrq8xEvUGWHCRDVKWBVhBpkNihC",
+      "role": "customer",
+      "created_at": "2026-06-24T18:09:00.718Z"
+    },
+    {
+      "id": "usr_1782324554249",
+      "name": "John Test",
+      "email": "user_1782324554118@test.com",
+      "phone": "9990005503",
+      "password_hash": "$2b$10$I.edrNwXftQ6Cgd4SUr7MOdMkJJnyEwU4wShhU5YBqq8nbIVpjIXu",
+      "role": "customer",
+      "created_at": "2026-06-24T18:09:14.249Z"
+    },
+    {
+      "id": "usr_1782325306701",
+      "name": "Sangeetha",
+      "email": "sangeethasangeetha14062@gmail.com",
+      "phone": "+91 733 709 5757",
+      "password_hash": "$2b$10$zBCujKn1lpucEs.WtMDbe.b3A16i2qvISTJdS9nthDaZcXiNwgcLu",
+      "role": "customer",
+      "created_at": "2026-06-24T18:21:46.701Z"
+    }
+  ],
+  "buses": [
+    {
+      "id": "bus_001",
+      "bus_name": "Zingbus Premium AC",
+      "bus_type": "Luxury",
+      "capacity": 32,
+      "amenities": [
+        "AC",
+        "WiFi",
+        "Charging Port",
+        "Water Bottle",
+        "Premium Audio"
+      ],
+      "rows": 8,
+      "cols": 4
+    },
+    {
+      "id": "bus_002",
+      "bus_name": "KPN Sleepers (Multi-Axle)",
+      "bus_type": "Sleeper",
+      "capacity": 20,
+      "amenities": [
+        "AC",
+        "WiFi",
+        "Charging Port",
+        "Blanket",
+        "Water Bottle",
+        "Sleeper Pod"
+      ],
+      "rows": 5,
+      "cols": 4
+    },
+    {
+      "id": "bus_003",
+      "bus_name": "VRL Travels Seater",
+      "bus_type": "Seater",
+      "capacity": 40,
+      "amenities": [
+        "AC",
+        "Charging Port"
+      ],
+      "rows": 10,
+      "cols": 4
+    }
+  ],
+  "routes": [
+    {
+      "id": "route_001",
+      "source": "Mumbai",
+      "destination": "Pune",
+      "distance": 150,
+      "duration": 180,
+      "boarding_points": [
+        "Borivali East (National Park)",
+        "Andheri WEH (Bisleri)",
+        "Sion Circle (Highway)",
+        "Vashi Plaza (Below Flyover)"
+      ],
+      "dropping_points": [
+        "Wakad (Ginger Hotel)",
+        "Chinchwad (Elpro Mall)",
+        "Swargate (Kothari Travels)",
+        "Pune Station (Stands)"
+      ]
+    },
+    {
+      "id": "route_002",
+      "source": "Pune",
+      "destination": "Mumbai",
+      "distance": 150,
+      "duration": 180,
+      "boarding_points": [
+        "Pune Station (Stands)",
+        "Swargate (Kothari Travels)",
+        "Chinchwad (Elpro Mall)",
+        "Wakad (Ginger Hotel)"
+      ],
+      "dropping_points": [
+        "Vashi Plaza (Below Flyover)",
+        "Sion Circle (Highway)",
+        "Andheri WEH (Bisleri)",
+        "Borivali East (National Park)"
+      ]
+    },
+    {
+      "id": "route_003",
+      "source": "Bangalore",
+      "destination": "Chennai",
+      "distance": 350,
+      "duration": 360,
+      "boarding_points": [
+        "Majestic (KSR TC)",
+        "Indiranagar (Metro Stn)",
+        "Silk Board (Flyover Start)",
+        "Electronic City (Phase 1)"
+      ],
+      "dropping_points": [
+        "Poonamallee (Bypass)",
+        "Koyambedu (Omni Bus Stand)",
+        "Guindy (Metro Station)",
+        "T. Nagar (Habibullah Road)"
+      ]
+    },
+    {
+      "id": "route_004",
+      "source": "Chennai",
+      "destination": "Bangalore",
+      "distance": 350,
+      "duration": 360,
+      "boarding_points": [
+        "T. Nagar (Habibullah Road)",
+        "Guindy (Metro Station)",
+        "Koyambedu (Omni Bus Stand)",
+        "Poonamallee (Bypass)"
+      ],
+      "dropping_points": [
+        "Electronic City (Phase 1)",
+        "Silk Board (Flyover Start)",
+        "Indiranagar (Metro Stn)",
+        "Majestic (KSR TC)"
+      ]
+    },
+    {
+      "id": "route_005",
+      "source": "Delhi",
+      "destination": "Jaipur",
+      "distance": 270,
+      "duration": 300,
+      "boarding_points": [
+        "Kashmere Gate (ISBT)",
+        "Karol Bagh (Metro Stn)",
+        "Dhaula Kuan (Metro)",
+        "IFFCO Chowk (Gurugram)"
+      ],
+      "dropping_points": [
+        "Sindhi Camp (Bus Stand)",
+        "Narayan Singh Circle",
+        "Transport Nagar (Entry)",
+        "Jaipur Bypass"
+      ]
+    }
+  ],
+  "schedules": [
+    {
+      "id": "sch_today_1",
+      "bus_id": "bus_001",
+      "route_id": "route_001",
+      "departure_time": "2026-06-24T08:00:00",
+      "arrival_time": "2026-06-24T11:00:00",
+      "base_fare": 400,
+      "seats_status": {
+        "A1": "usr_1782320370216",
+        "B1": "usr_1782324554249",
+        "C1": null,
+        "D1": null,
+        "A2": null,
+        "B2": null,
+        "C2": null,
+        "D2": null,
+        "A3": null,
+        "B3": null,
+        "C3": null,
+        "D3": null,
+        "A4": null,
+        "B4": null,
+        "C4": null,
+        "D4": null,
+        "A5": null,
+        "B5": null,
+        "C5": null,
+        "D5": null,
+        "A6": null,
+        "B6": null,
+        "C6": null,
+        "D6": null,
+        "A7": null,
+        "B7": null,
+        "C7": null,
+        "D7": null,
+        "A8": null,
+        "B8": null,
+        "C8": null,
+        "D8": null
+      },
+      "waiting_list": [],
+      "gps_latitude": 19.076,
+      "gps_longitude": 72.8777,
+      "gps_speed": 0,
+      "gps_status": "Scheduled",
+      "gps_last_updated": "2026-06-24T16:01:25.801Z"
+    },
+    {
+      "id": "sch_today_2",
+      "bus_id": "bus_002",
+      "route_id": "route_003",
+      "departure_time": "2026-06-24T14:00:00",
+      "arrival_time": "2026-06-24T20:00:00",
+      "base_fare": 800,
+      "seats_status": {
+        "A1": null,
+        "B1": null,
+        "C1": null,
+        "D1": null,
+        "A2": null,
+        "B2": null,
+        "C2": null,
+        "D2": null,
+        "A3": null,
+        "B3": null,
+        "C3": null,
+        "D3": null,
+        "A4": null,
+        "B4": null,
+        "C4": null,
+        "D4": null,
+        "A5": null,
+        "B5": null,
+        "C5": null,
+        "D5": null
+      },
+      "waiting_list": [],
+      "gps_latitude": 12.9716,
+      "gps_longitude": 77.5946,
+      "gps_speed": 0,
+      "gps_status": "Scheduled",
+      "gps_last_updated": "2026-06-24T16:01:25.801Z"
+    },
+    {
+      "id": "sch_tomorrow_1",
+      "bus_id": "bus_001",
+      "route_id": "route_001",
+      "departure_time": "2026-06-25T09:00:00",
+      "arrival_time": "2026-06-25T12:00:00",
+      "base_fare": 400,
+      "seats_status": {
+        "A1": null,
+        "B1": null,
+        "C1": null,
+        "D1": null,
+        "A2": null,
+        "B2": null,
+        "C2": null,
+        "D2": null,
+        "A3": null,
+        "B3": null,
+        "C3": null,
+        "D3": null,
+        "A4": null,
+        "B4": null,
+        "C4": null,
+        "D4": null,
+        "A5": null,
+        "B5": null,
+        "C5": null,
+        "D5": null,
+        "A6": null,
+        "B6": null,
+        "C6": null,
+        "D6": null,
+        "A7": null,
+        "B7": null,
+        "C7": null,
+        "D7": null,
+        "A8": null,
+        "B8": null,
+        "C8": null,
+        "D8": null
+      },
+      "waiting_list": []
+    },
+    {
+      "id": "sch_tomorrow_2",
+      "bus_id": "bus_003",
+      "route_id": "route_002",
+      "departure_time": "2026-06-25T16:00:00",
+      "arrival_time": "2026-06-25T19:00:00",
+      "base_fare": 350,
+      "seats_status": {
+        "A1": null,
+        "B1": null,
+        "C1": null,
+        "D1": null,
+        "A2": null,
+        "B2": null,
+        "C2": null,
+        "D2": null,
+        "A3": null,
+        "B3": null,
+        "C3": null,
+        "D3": null,
+        "A4": null,
+        "B4": null,
+        "C4": null,
+        "D4": null,
+        "A5": null,
+        "B5": null,
+        "C5": null,
+        "D5": null,
+        "A6": null,
+        "B6": null,
+        "C6": null,
+        "D6": null,
+        "A7": null,
+        "B7": null,
+        "C7": null,
+        "D7": null,
+        "A8": null,
+        "B8": null,
+        "C8": null,
+        "D8": null,
+        "A9": null,
+        "B9": null,
+        "C9": null,
+        "D9": null,
+        "A10": null,
+        "B10": null,
+        "C10": null,
+        "D10": null
+      },
+      "waiting_list": []
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bk_1782320370241",
+      "user_id": "usr_1782320370216",
+      "schedule_id": "sch_today_1",
+      "booking_status": "Confirmed",
+      "total_amount": 437,
+      "seats": [
+        "A1"
+      ],
+      "passenger_details": [
+        {
+          "name": "John Test",
+          "age": 30,
+          "gender": "Male",
+          "seat_number": "A1"
+        }
+      ],
+      "created_at": "2026-06-24T16:59:30.241Z",
+      "boarding_point": "Borivali East (National Park)",
+      "dropping_point": "Wakad (Ginger Hotel)"
+    },
+    {
+      "id": "bk_1782324554280",
+      "user_id": "usr_1782324554249",
+      "schedule_id": "sch_today_1",
+      "booking_status": "Confirmed",
+      "total_amount": 437,
+      "seats": [
+        "B1"
+      ],
+      "passenger_details": [
+        {
+          "name": "John Test",
+          "age": 30,
+          "gender": "Male",
+          "seat_number": "B1"
+        }
+      ],
+      "created_at": "2026-06-24T18:09:14.280Z",
+      "boarding_point": "Borivali East (National Park)",
+      "dropping_point": "Wakad (Ginger Hotel)"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_1782320370241",
+      "booking_id": "bk_1782320370241",
+      "amount": 437,
+      "payment_status": "Paid",
+      "transaction_reference": "TXN_215100971",
+      "created_at": "2026-06-24T16:59:30.241Z"
+    },
+    {
+      "id": "pay_1782324554280",
+      "booking_id": "bk_1782324554280",
+      "amount": 437,
+      "payment_status": "Paid",
+      "transaction_reference": "TXN_441792493",
+      "created_at": "2026-06-24T18:09:14.280Z"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "tkt_1782320370241_0",
+      "booking_id": "bk_1782320370241",
+      "qr_code": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=%7B%22ticketId%22%3A%22tkt_1782320370241_0%22%2C%22bookingId%22%3A%22bk_1782320370241%22%2C%22passenger%22%3A%22John%20Test%22%2C%22seat%22%3A%22A1%22%2C%22route%22%3A%22Mumbai%20-%3E%20Pune%22%2C%22departure%22%3A%222026-06-24T08%3A00%3A00%22%2C%22boarding_point%22%3A%22Borivali%20East%20(National%20Park)%22%2C%22dropping_point%22%3A%22Wakad%20(Ginger%20Hotel)%22%7D",
+      "ticket_status": "Confirmed"
+    },
+    {
+      "id": "tkt_1782324554280_0",
+      "booking_id": "bk_1782324554280",
+      "qr_code": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=%7B%22ticketId%22%3A%22tkt_1782324554280_0%22%2C%22bookingId%22%3A%22bk_1782324554280%22%2C%22passenger%22%3A%22John%20Test%22%2C%22seat%22%3A%22B1%22%2C%22route%22%3A%22Mumbai%20-%3E%20Pune%22%2C%22departure%22%3A%222026-06-24T08%3A00%3A00%22%2C%22boarding_point%22%3A%22Borivali%20East%20(National%20Park)%22%2C%22dropping_point%22%3A%22Wakad%20(Ginger%20Hotel)%22%7D",
+      "ticket_status": "Confirmed"
+    }
+  ],
+  "pricingRules": [
+    {
+      "id": "pr_001",
+      "name": "Weekend Dynamic Surge",
+      "multiplier": 1.15,
+      "type": "time",
+      "applies_to": "Saturday, Sunday"
+    },
+    {
+      "id": "pr_002",
+      "name": "Festive Season Premium",
+      "multiplier": 1.3,
+      "type": "holiday",
+      "applies_to": "Holidays & Festive Seasons"
+    },
+    {
+      "id": "pr_003",
+      "name": "High Demand Surge (< 20% remaining seats)",
+      "multiplier": 1.25,
+      "type": "demand",
+      "applies_to": "Occupancy > 80%"
+    }
+  ]
+}

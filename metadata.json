@@ -1,0 +1,6 @@
+{
+  "name": "Online Bus Ticket Booking System",
+  "description": "A production-ready full-stack bus ticket booking platform allowing customers to search, book, and manage schedules, and operators to verify boardings with QR codes.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
